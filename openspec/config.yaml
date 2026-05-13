@@ -1,0 +1,30 @@
+schema:spec-driven
+
+# Project context
+# This is shown to AI when creating artifacts.
+context: |
+  Project specs and standards (single source of truth):
+  All artifact creation and implementation MUST follow the project's technical context in docs/ and ai-specs/. Read and apply these when creating or implementing:
+  - docs/base-standards.md — Core principles, TDD, language standards, and single source of truth.
+  - docs/backend-standards.md — API development, database (MySQL), and backend testing.
+  - docs/frontend-standards.md — React, UI/UX, and component testing (Cypress).
+  - docs/documentation-standards.md — Documentation structure and maintenance.
+  - docs/api-spec.yml — API contracts and endpoint definitions.
+  - docs/data-model.md — Database structure and domain entities.
+  
+  For implementation:
+  - Adopt the agent from `ai-specs/agents/backend-developer.md` for backend work.
+  - Adopt the agent from `ai-specs/agents/frontend-developer.md` for frontend work.
+  - Use `ai-specs/skills` as guidance for specific workflows.
+  
+  All paths are relative to the project root.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
